@@ -1,0 +1,35 @@
+<!--A basic tic toc game for webiste demonstration-->
+<!DOCTYPE html>
+<html>
+<head><!--Head tag with all metadata and links to stylesheet-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Tic Tac Toe</title>
+</head>
+<!--Contains the design of the game board and other information regarding player turn-->
+<body style="background-color: #ff4545;">
+    <div class="header"><h1>DUEL</h1></div>
+   <b>Your Symbol:</b>  <div id="symbol">waiting...</div>
+    <div class="board">
+        <!--Game board is implemented using buttons with same class and different ids representing the square number-->
+        <button class="cell" id="a0"></button>
+        <button class="cell" id="a1"></button>
+        <button class="cell" id="a2"></button>
+        <button class="cell" id="b0"></button>
+        <button class="cell" id="b1"></button>
+        <button class="cell" id="b2"></button>
+        <button class="cell" id="c0"></button>
+        <button class="cell" id="c1"></button>
+        <button class="cell" id="c2"></button>
+
+        <div id="messages">Waiting for opponent to join...</div>
+    </div>
+    <!--Buttons displayed when a player wins or looses-->
+    <button id="win_button" style="visibility: hidden;"><a href="win.php" onclick="javascript:event.target.port=80">Get Money!</a></button>
+    <button id="lose_button" style="visibility: hidden;"><a href="welcome.php" onclick="javascript:event.target.port=80">Exit</a></button>
+    <script src="/socket.io/socket.io.js"></script><!--Link to server.js-->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script.js"></script><!--Link to script.js-->
+</body>
+</html>

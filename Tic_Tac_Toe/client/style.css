@@ -1,0 +1,48 @@
+/*Stylesheet for the game board*/
+body {
+    text-align: center;
+    font-family:cursive;
+}
+
+#symbol {
+    display: block;
+    font-size: 2em;
+}
+
+.board {
+    display:block;
+    margin: auto;
+    width: 350px;
+    border: 4px black;
+    border-radius: 5px;
+    padding:3px;
+}
+.board button {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 3em;
+}
+.header{
+    text-align:center;
+
+    display: block;
+}
+#messages {
+    font-size: 1.9em;
+}
+#win_button,#lose_button{
+    width:100px;
+    height:50px;
+    font-family: cursive;
+    border-radius:5px;
+    background-color:#969696;
+
+}
+a{
+    color: black;
+}
